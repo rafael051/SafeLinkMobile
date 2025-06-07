@@ -18,10 +18,17 @@ export default function ListagemAlertasScreen() {
     const carregarAlertas = () => {
         setLoading(true);
         listarAlertas()
-            .then(res => setAlertas(res.data))
-            .catch(err => console.error('Erro ao buscar alertas:', err))
+            .then(res => {
+                const lista = Array.isArray(res.data) ? res.data : [];
+                setAlertas(lista);
+            })
+            .catch(err => {
+                console.error('Erro ao buscar alertas:', err);
+                setAlertas([]); // Evita estado indefinido
+            })
             .finally(() => setLoading(false));
     };
+
 
     useEffect(() => {
         carregarAlertas();
