@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, Alert, ScrollView, TouchableOpacity } from 'react-native';
+import {Text, Alert, ScrollView, TouchableOpacity } from 'react-native';
 import globalStyles from '../styles/globalStyles';
 import FormInput from '../components/FormInput';
 import { criarEvento, atualizarEvento, buscarEventoPorId } from '../services/eventoNaturalService';
