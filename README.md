@@ -1,5 +1,5 @@
 ```markdown
-# 📱 SafeLinkMobile
+#### 📱 SafeLinkMobile
 
 Aplicativo mobile do sistema **SafeLink**, desenvolvido com **React Native + Expo**, para consulta e gerenciamento de alertas de risco, previsões e relatos enviados por usuários em regiões afetadas por desastres naturais.
 
