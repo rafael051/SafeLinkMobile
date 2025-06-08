@@ -1,48 +1,48 @@
 ```markdown
-# 📱 SafeLinkMobile
+# 🛡️ SafeLinkMobile
 
-Aplicativo mobile do sistema **SafeLink**, desenvolvido com **React Native + Expo**, para consulta e gerenciamento de alertas de risco, previsões e relatos enviados por usuários em regiões afetadas por desastres naturais.
+Aplicativo mobile desenvolvido com **React Native + Expo** para auxiliar na **monitoramento e resposta a eventos climáticos extremos**. Parte do ecossistema SafeLink, este app permite cadastrar, visualizar e interagir com alertas, previsões de risco e relatos de usuários em regiões afetadas.
 
-Projeto integrante da **Global Solution 2025/1** (FIAP).
+📱 **Global Solution 2025/1 - FIAP**  
+🎓 Disciplina: *Mobile Application Development*
 
 ---
 
-## 🧩 Funcionalidades
+## ✅ Funcionalidades
 
-- 📍 Listagem e cadastro de **Regiões**
-- 🚨 Criação, edição e exclusão de **Alertas**
+- 📍 Cadastro e listagem de **Regiões**
+- 🚨 Criação, edição e visualização de **Alertas**
 - 🌧️ Acompanhamento de **Previsões de Risco**
-- 🗣️ Registro e visualização de **Relatos dos Usuários**
+- 🗣️ Registro e consulta de **Relatos dos Usuários**
 - 👥 Gerenciamento de **Usuários**
-- 🔐 Autenticação JWT e integração com API REST Java/.NET
+- 🔐 Integração com API segura via **JWT**
 
 ---
 
 ## 🚀 Tecnologias Utilizadas
 
-- React Native
-- Expo
-- Axios
+- React Native com Expo
 - React Navigation
+- Axios
 - React Native Paper
 - React Native Picker
 
 ---
 
-## 📁 Estrutura de Pastas
+## 📁 Estrutura do Projeto
 
 ```
 SafeLinkMobile/
-├── assets/                # Ícones e imagens do app
+├── assets/                # Imagens e ícones do app
 ├── src/
 │   ├── components/        # Componentes reutilizáveis (cards, inputs)
-│   ├── screens/           # Telas do app (cadastro, listagem, etc.)
-│   ├── services/          # Serviços para comunicação com a API
-│   ├── styles/            # Estilo global centralizado
-│   └── utils/             # Funções utilitárias
-├── App.jsx                # Componente raiz
+│   ├── screens/           # Telas (cadastro, listagem etc.)
+│   ├── services/          # Comunicação com a API
+│   ├── styles/            # Estilos globais
+│   └── utils/             # Funções auxiliares
+├── App.jsx                # Componente raiz da aplicação
 ├── app.json               # Configurações do projeto Expo
-├── index.js               # Registro do app
+├── index.js               # Entry point do app
 └── package.json           # Dependências e scripts
 ```
 
@@ -56,7 +56,7 @@ SafeLinkMobile/
 - NPM ou Yarn
 - Expo CLI (`npm install -g expo-cli`)
 
-### Passo a Passo
+### Passos
 
 ```bash
 # 1. Clone o repositório
@@ -66,22 +66,22 @@ cd SafeLinkMobile
 # 2. Instale as dependências
 npm install
 
-# 3. Inicie a aplicação
+# 3. Execute o projeto
 npx expo start
 ```
 
-Abra o app no navegador, emulador ou escaneie o QR Code com o **Expo Go** no seu celular.
+Acesse pelo navegador ou escaneie o QR code com o **Expo Go** no seu celular.
 
 ---
 
 ## 🔗 Configuração da API
 
-A aplicação se comunica com a API SafeLink via HTTP. Para alterar a URL base da API, edite o arquivo:
+Para alterar a URL da API backend:
 
 ```js
 // src/services/api.js
 const api = axios.create({
-  baseURL: "http://localhost:8080" // ou URL da API no Railway/Azure
+  baseURL: "http://localhost:8080" // ou a URL do Railway/Azure
 });
 ```
 
@@ -94,21 +94,14 @@ const api = axios.create({
 
 ---
 
-## 📝 Observações Finais
+## 📝 Considerações Finais
 
-- Aplicativo desenvolvido como parte da disciplina **Mobile Application Development - FIAP**.
-- Toda a lógica de CRUD foi implementada com Axios, com navegação dinâmica via React Navigation e estilização global centralizada.
-
----
-
-## 📸 Screenshots (opcional)
-
-Adicione capturas de tela do aplicativo aqui se desejar.
+- Projeto acadêmico com foco em **tecnologia para prevenção de desastres naturais**.
+- Totalmente integrado com API RESTful segura, seguindo as boas práticas de desenvolvimento mobile.
 
 ---
 
 ## 📄 Licença
 
-Projeto educacional desenvolvido para a **Global Solution 2025/1 - FIAP**.  
-Uso exclusivo para fins acadêmicos.
+Uso exclusivo para fins educacionais - **FIAP Global Solution 2025/1**
 ```
