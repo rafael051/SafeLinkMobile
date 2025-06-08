@@ -1,4 +1,3 @@
-```markdown
 # 🛡️ SafeLinkMobile
 
 Aplicativo mobile desenvolvido com **React Native + Expo** para auxiliar na **monitoramento e resposta a eventos climáticos extremos**. Parte do ecossistema SafeLink, este app permite cadastrar, visualizar e interagir com alertas, previsões de risco e relatos de usuários em regiões afetadas.
