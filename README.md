@@ -100,7 +100,7 @@ const api = axios.create({
 
 ---
 
-## 📄 Licença
+## 📄 Link YouTube
 
-Uso exclusivo para fins educacionais - **FIAP Global Solution 2025/1**
+(https://youtu.be/CSKL8zvsu_I)
 ```
